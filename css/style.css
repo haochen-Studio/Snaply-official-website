@@ -602,7 +602,16 @@ nav .container {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    cursor: pointer;
+    text-decoration: none !important;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.download-card * {
+    text-decoration: none !important;
 }
 
 .download-card:hover {
@@ -613,6 +622,8 @@ nav .container {
 .download-card .platform-icon {
     font-size: 48px;
     margin-bottom: 15px;
+    text-decoration: none;
+    line-height: 1;
 }
 
 .download-card .platform-name {
