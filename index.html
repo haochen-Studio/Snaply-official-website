@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snaply - 可视化网页编程平台</title>
+    <meta name="description" content="Snaply 是一款类似 Scratch 的可视化编程工具，通过拖拽方块即可创建 HTML 网站。适合编程初学者和网页设计师使用。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="png/html5icon.png">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="png/html5icon.png" class="logo-icon" alt="Snaply">
+                <span>Snaply</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">功能特性</a></li>
+                <li><a href="#demo">在线演示</a></li>
+                <li><a href="#how-it-works">使用教程</a></li>
+                <li><a href="#download">下载</a></li>
+            </ul>
+            <a href="#download" class="download-btn">立即下载</a>
+            <div class="hamburger">☰</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>用方块搭建你的网站</h1>
+                <p>像玩积木一样编程，拖拽方块即可创建专业的 HTML 网页<br>无需代码基础，人人都能成为网页设计师</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn-primary">免费下载</a>
+                    <a href="#demo" class="btn-secondary">在线体验</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50万+</div>
+                        <div class="stat-label">活跃用户</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">预置方块</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100万+</div>
+                        <div class="stat-label">创建项目</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>为什么选择 Snaply</h2>
+                <p>简单直观的可视化编程体验，让网页开发变得轻松有趣</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon blue">🧩</div>
+                    <h3>可视化编程</h3>
+                    <p>通过拖拽方块进行编程，无需记住复杂的代码语法，像搭积木一样创建网页。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon green">⚡</div>
+                    <h3>实时预览</h3>
+                    <p>所见即所得，拖动方块的同时即时预览网页效果，快速迭代开发。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon pink">📱</div>
+                    <h3>响应式设计</h3>
+                    <p>自动生成响应式代码，一键适配桌面端和移动端，轻松创建跨平台网站。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon purple">🎨</div>
+                    <h3>丰富样式</h3>
+                    <p>内置数百种样式和主题，只需点击即可美化你的网页，专业设计触手可及。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon yellow">💾</div>
+                    <h3>导出代码</h3>
+                    <p>支持导出完整的 HTML/CSS/JS 代码，方便进阶用户进行二次开发和部署。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon cyan">🌐</div>
+                    <h3>多语言支持</h3>
+                    <p>支持中文、英文等多种语言界面，让全球用户都能轻松上手。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="section-title">
+                <h2>在线演示</h2>
+                <p>体验拖拽方块生成 HTML 的神奇过程</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-header">
+                    <span class="demo-title">Snaply 编辑器</span>
+                    <span class="demo-badge">实时预览</span>
+                </div>
+                <div class="demo-content">
+                    <div class="blocks-panel">
+                        <h4>HTML 方块库</h4>
+                        <div class="block-item" draggable="true" data-block="html">
+                            <span class="block-icon">&lt;</span>HTML 文档
+                        </div>
+                        <div class="block-item" draggable="true" data-block="head">
+                            <span class="block-icon">⚙️</span>Head 部分
+                        </div>
+                        <div class="block-item" draggable="true" data-block="body">
+                            <span class="block-icon">📄</span>Body 部分
+                        </div>
+                        <div class="block-item" draggable="true" data-block="h1">
+                            <span class="block-icon">🔤</span>标题 H1
+                        </div>
+                        <div class="block-item" draggable="true" data-block="p">
+                            <span class="block-icon">📝</span>段落
+                        </div>
+                        <div class="block-item" draggable="true" data-block="div">
+                            <span class="block-icon">📦</span>容器 Div
+                        </div>
+                        <div class="block-item" draggable="true" data-block="button">
+                            <span class="block-icon">🔘</span>按钮
+                        </div>
+                        <div class="block-item" draggable="true" data-block="img">
+                            <span class="block-icon">🖼️</span>图片
+                        </div>
+                        <div class="block-item" draggable="true" data-block="a">
+                            <span class="block-icon">🔗</span>链接
+                        </div>
+                        <div class="block-item" draggable="true" data-block="ul">
+                            <span class="block-icon">📋</span>列表
+                        </div>
+                    </div>
+                    <div class="workspace">
+                        <h4>将方块拖到这里</h4>
+                    </div>
+                </div>
+                <div class="output-panel">
+                    <div class="output-header">
+                        <span>生成的 HTML 代码</span>
+                        <button class="copy-btn">复制代码</button>
+                    </div>
+                    <div class="output-content">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Drag blocks here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>使用教程</h2>
+                <p>三步即可创建你的第一个网站</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>选择方块</h3>
+                    <p>从左侧方块库中选择需要的 HTML 元素，如标题、段落、图片等。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>拖入工作区</h3>
+                    <p>将选中的方块拖入右侧工作区，方块会自动排列并生成对应的代码。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>导出发布</h3>
+                    <p>点击导出按钮获取完整代码，或直接一键发布到互联网上。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download" id="download">
+        <div class="container">
+            <h2>下载 Snaply</h2>
+            <p>选择适合你的平台，开始你的编程之旅</p>
+            <div class="download-options">
+                <div class="download-card" onclick="alert('正在下载 Windows 版本...')">
+                    <div class="platform-icon">🖥️</div>
+                    <div class="platform-name">Windows</div>
+                    <div class="platform-version">v2.0.0 · 64位</div>
+                </div>
+                <div class="download-card" onclick="alert('正在下载 macOS 版本...')">
+                    <div class="platform-icon">🍎</div>
+                    <div class="platform-name">macOS</div>
+                    <div class="platform-version">v2.0.0 · Intel/M1</div>
+                </div>
+                <div class="download-card" onclick="alert('正在下载 Linux 版本...')">
+                    <div class="platform-icon">🐧</div>
+                    <div class="platform-name">Linux</div>
+                    <div class="platform-version">v2.0.0 · AppImage</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="png/html5icon.png" class="logo-icon" alt="Snaply">
+                        <span>Snaply</span>
+                    </div>
+                    <p>Snaply 是一款面向初学者的可视化网页编程工具，让每个人都能轻松创建专业网站。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="#features">功能特性</a></li>
+                        <li><a href="#download">下载中心</a></li>
+                        <li><a href="#how-it-works">使用教程</a></li>
+                        <li><a href="#">更新日志</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="#">文档中心</a></li>
+                        <li><a href="#">社区论坛</a></li>
+                        <li><a href="#">示例项目</a></li>
+                        <li><a href="#">API 文档</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Snaply. All rights reserved. Made with ❤️ for web creators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
