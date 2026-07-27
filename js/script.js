@@ -1,9 +1,28 @@
+const DOWNLOAD_URL = 'https://developer2.lanrar.com/file/?BmAAPgo7BDUJAAoyAzZQPFdoVGxWWgdrVzEBdwY2AHgALlV4XGhXc1MjATELNgVoVGsEXlNlAmQCOFNmB2tWZQY1AGEKZARhCW0KZANxUDdXflRsVjgHMFdmATQGYwA3ADNVOlwnV3NTdQFqC20FNFQ8BDdTIwIwAjJTegdpVmAGKQBnCm8EZglvCj8DYVBiVzhUaFY/BzVXMgE0Bj8ANwAwVWdcMVc3UzYBbwtoBWFUOQRiUzkCYgI9UzEHY1YzBjYAeQotBDkJLwp6AyJQIldoVCNWYAdhV20BMwZiADYANVU2XDJXN1MjASMLNgVpVGsEZ1MxAjECMlNtB25WZgY0AGEKYARkCW0KcgN5UHdXa1Q9Vn4HOFdgASEGLwBxAHdVP1wwVzRTPQFiC24FNlQ7BDVTPwI2AiNTIAcyVicGOwBmCmYEZwlxCm0DYFBiVyNUY1Y8BytXYQE/BmwALwAmVWZcbld0U2sBCAs8BW9UMwQxUyICJgJxUywHK1YyBlkAIgo2BG0Jbw==&toolsdown';
+
+function downloadSnaply() {
+    window.open(DOWNLOAD_URL, '_blank');
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     initNavigation();
     initDemoDragDrop();
     initCopyButton();
     initScrollReveal();
+    initDownloadButtons();
 });
+
+function initDownloadButtons() {
+    const downloadBtns = document.querySelectorAll('.download-btn, .btn-primary');
+    downloadBtns.forEach(btn => {
+        if (btn.getAttribute('href') === DOWNLOAD_URL) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                downloadSnaply();
+            });
+        }
+    });
+}
 
 function initNavigation() {
     const nav = document.querySelector('nav');
